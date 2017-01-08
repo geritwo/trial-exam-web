@@ -1,0 +1,27 @@
+{
+  "name": "caesarsbackend",
+  "version": "1.0.0",
+  "description": "Caesar's Cypher backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "geritw"
+  },
+  "keywords": [
+    "cypher",
+    "exam",
+    "backend"
+  ],
+  "author": "Gergo Vamosi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}
