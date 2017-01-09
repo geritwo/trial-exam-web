@@ -2,26 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ceasar's Cypher</title>
+    <title>Ceasar's cipher</title>
     <link rel="stylesheet" type="text/css" href="./style.css"
   </head>
   <body>
     <header>
-      <h1>Ceasar's Cypher</h1>
+      <h1>Ceasar's cipher</h1>
     </header>
     <main>
-      <form action="localhost:3000/decode" enctype="application/x-www-form-urlencoded">
-        <textarea name="words" rows="5" cols="40" accept="text/plain" required="true">
-        Enter text to be decyphered here!</textarea>
+      <form action="localhost:3000/decode" enctype="application/json">
+        <label for="text">Enter text to decipher below:</label>
+        <textarea name="text" rows="5" cols="40" accept="text/plain" required="true">
+        </textarea>
         <span class="input-bottom-line">
           <input name="shift" type="number" min="-25" max="25" required="true"> Shift?</input>
-          <button name="submit" type="submit">Decypher!</button>
+          <button name="submit" type="submit">Aia iacta est!</button>
         </span>
       </form>
       <section>
-        <h2>Recently decyphered:</h2>
+        <h2>Recently ciphered:</h2>
+        *timestamp*, Shift: *shift*<br/>
+        text
       </section>
     </main>
+    <img id="jc" src="./images/JC_thumbsup.png" alt="Caesar himself!">
     <script src="./app.js"></script>
   </body>
 </html>
